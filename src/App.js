@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Article} from './index';
+import {Article} from './components/index';
 
 function App() {
   return (
