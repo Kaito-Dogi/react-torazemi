@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Counter from "./Counter";
 import {Title, Content} from './index'
 import PublishButton from "./PublishButton";
 import TextInput from "./TextInput";
@@ -14,6 +15,7 @@ const Article = (props) => {
             <Content content={props.content} />
             <PublishButton isPublished={isPublished} onClick={publishArticle} />
             <TextInput />
+            <Counter />
         </>
     );
 };
