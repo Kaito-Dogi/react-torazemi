@@ -16,6 +16,12 @@ const Counter = (props) => {
     // }
     // ```
 
+    // 以下の書き方は NG
+    // setCount は現在の count を参照するため、値の更新が完了する前に実行すると、値の更新されないように見えることがある。
+    // ```
+    // setCount(count + 1)
+    // ```
+
     return (
         <div>
             <p>カウント数: {count}</p>
