@@ -9,6 +9,13 @@ const Counter = (props) => {
         setCount(prevCount => prevCount - 1);
     };
 
+    // prevCount => prevCount + 1 は以下の省略形
+    // ```
+    // (prevCount) => {
+    //     return prevCount + 1;
+    // }
+    // ```
+
     return (
         <div>
             <p>カウント数: {count}</p>
