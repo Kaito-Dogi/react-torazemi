@@ -23,22 +23,22 @@ const Counter = () => {
     // ```
 
     useEffect(() => {
-        console.log("Current count: ", count);
+        console.log('Current count: ', count);
     });
 
     // 初回レンダリングのみ実行（依存関係なし）
     // useEffect(() => {
-    //     console.log("Current count: ", count);
+    //     console.log('Current count: ', count);
     // }, []);
 
     // trigger が変更される度に実行される（trigger にのみ依存）
     // useEffect(() => {
-    //     console.log("Current count: ", count);
+    //     console.log('Current count: ', count);
     // }, [trigger]);
 
     // trigger1, trigger2 が変更される度に実行される（trigger1, trigger2 に依存）
     // useEffect(() => {
-    //     console.log("Current count: ", count);
+    //     console.log('Current count: ', count);
     // }, [trigger1, trigger2]);
 
     return (
