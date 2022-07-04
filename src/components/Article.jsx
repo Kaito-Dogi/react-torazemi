@@ -1,8 +1,9 @@
 import {useState} from "react";
 import Counter from "./Counter";
-import {Title, Content} from './index'
+import {Title, Content} from './index';
 import PublishButton from "./PublishButton";
 import TextInput from "./TextInput";
+import ToggleButton from "./ToggleButton";
 
 const Article = (props) => {
     const [isPublished, setIsPublished] = useState(false);
@@ -16,6 +17,7 @@ const Article = (props) => {
             <PublishButton isPublished={isPublished} onClick={publishArticle} />
             <TextInput />
             <Counter />
+            <ToggleButton />
         </>
     );
 };

@@ -1,6 +1,6 @@
-import {useState} from 'react'
+import {useState} from 'react';
 
-const TextInput = (props) => {
+const TextInput = () => {
     const [text, setText] = useState('');
     const handleText = (event) => {
         setText(event.target.value);
