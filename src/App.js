@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     fetchUser(userId);
-  });
+  }, []);
 
   return (
     <>
